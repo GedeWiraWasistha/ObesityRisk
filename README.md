@@ -15,8 +15,8 @@ Binary columns utilize label encoding, while others employ one-hot encoding, and
 
 ## Modeling
 I have employed various algorithms including Decision Tree, Random Forest, AdaBoost, Gradient Boosting, XGBoost, CatBoost, and LGBM. 
-After thorough evaluation based on accuracy rates and ROC-AUC scores, I've identified Gradient Boosting and LGBM as the top-performing algorithms. 
-Consequently, these two algorithms will undergo a hyperparameter tuning process to determine the optimal parameters.
+After thorough evaluation based on accuracy rates and ROC-AUC scores, I've identified LGBM as the top-performing algorithms. 
+Consequently, these algorithms will undergo a hyperparameter tuning process to determine the optimal parameters.
 
 ## Predictions on Data Test
 I proceeded to perform predictions on the 'test.csv' data using the pre-tuned LGBM model. The structure of the columns in the 'test.csv' data 
@@ -24,7 +24,7 @@ is identical to that of the 'train.csv' data,except that it lacks the target var
 The pre-processing steps used for the 'test.csv' data are the same as those used for the 'train.csv' data.
 
 ## Conclusion
-With a high ROC AUC (0.99) on both testing and training data, as well as relatively stable accuracy (0.92 on training data and 0.90 on testing data), 
+With a high ROC AUC (0.99) on both testing and training data, as well as relatively stable accuracy (0.97 on training data and 0.91 on testing data), 
 it can be concluded that the model exhibits excellent predictive capability for the target classes in the testing data. A ROC AUC approaching 1 indicates the model's 
 outstanding ability to distinguish between positive and negative classes. 
 
